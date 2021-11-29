@@ -14,8 +14,7 @@ public class MainClass extends B{
 		aClass.defaultVarA = "a";
 		aClass.protectedVarA = "b";
 		aClass.publicVarA ="c";
-		aClass.defaultVarA = "d";
-		
+		aClass.defaultVarA = "d";		
 	}
 
 }
