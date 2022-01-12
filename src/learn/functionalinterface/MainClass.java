@@ -29,14 +29,13 @@ public class MainClass {
 				return s*s*s;
 			}
 		};
-		Powerable square = (int n)->n*n;
-		Powerable cube = (int n)-> n*n*n;
+		Powerable square = (n)->n*n;
+		Powerable cube = (n)-> n*n*n;
 		
 		System.out.println(square.calculate(2));
 		System.out.println(cube.calculate(2));
 		System.out.println("old " + squareOld.calculate(2));
 		System.out.println("Old " + cubeOld.calculate(2));
-
 	}
 
 }

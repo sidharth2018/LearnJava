@@ -13,6 +13,13 @@ public class MainClass {
 		 
 		 StringBuilder b = new StringBuilder("Sidharth");
 		 System.out.println(b);
+		 String s1 = "Hello";
+		 String s2 = "Hello";
+		 String s3 = s1;
+		 if(s1==s2) System.out.println("s1==s2");
+		 if(s2==s3) System.out.println("s2==s3");
+		 s1="Hi";
+		 System.out.println(s1+" "+s3);
 	}
 
 }
