@@ -48,8 +48,13 @@ public class MainClass {
 		m.put(1, 1);
 		m.put(2,4);
 		m.entrySet().stream().forEach(e->System.out.println(e.getKey()));
+		List<Integer> listForEach = new ArrayList<>();
 		System.out.println(con);
 		main(new Integer[] {1,2,3});
+		System.out.println("====Lazy=====");
+		List<Integer> laz1 = l2.stream().peek((i)-> System.out.println("number"+i)).toList();
+		System.out.println("===findFirst===");
+		l2.stream().peek((i)-> System.out.println("number"+i)).findFirst();
 	}
 	public static void main(Integer[] args) {
 		System.out.println(args[0]);

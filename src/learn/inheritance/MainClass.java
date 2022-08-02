@@ -33,6 +33,7 @@ class ClassAChild extends ClassA{
 	}
 	
 	public ClassAChild(int b) {
+//		super(b);
 		System.out.println(b+20+" Inside Child parameterized constructor");
 	}
 	
@@ -61,25 +62,25 @@ class ClassAGChild extends ClassAChild{
 public class MainClass {
 	
 	public static void main(String args[]) {
-		System.out.println("====Constructor Calling=====");
-		ClassA c1 =  new ClassA();
-		ClassA c2 = new ClassAChild();
-		ClassAChild c3 = new ClassAChild();
-		
-		System.out.println("=====Calling printinfo=====");
-		c1.printInfo();
-		c2.printInfo();
-		c3.printInfo();
-		
-		System.out.println("=====Calling static printinfo=====");
-		c1.staticprintInfo();
-		c2.staticprintInfo();
-		c3.staticprintInfo();
-		
-		System.out.println("=====Typecasting======");
-		//c2.childSpecMethod()// c2 is parent reference. Method will not be available.
-		ClassAChild c4 = (ClassAChild)c2; // Child specific method will accessible
-		c4.childSpecMethod();
+//		System.out.println("====Constructor Calling=====");
+//		ClassA c1 =  new ClassA();
+//		ClassA c2 = new ClassAChild();
+//		ClassAChild c3 = new ClassAChild();
+//		
+//		System.out.println("=====Calling printinfo=====");
+//		c1.printInfo();
+//		c2.printInfo();
+//		c3.printInfo();
+//		
+//		System.out.println("=====Calling static printinfo=====");
+//		c1.staticprintInfo();
+//		c2.staticprintInfo();
+//		c3.staticprintInfo();
+//		
+//		System.out.println("=====Typecasting======");
+//		//c2.childSpecMethod()// c2 is parent reference. Method will not be available.
+//		ClassAChild c4 = (ClassAChild)c2; // Child specific method will accessible
+//		c4.childSpecMethod();
 		
 		ClassA aParam = new ClassA(1);
 		ClassAChild acParam = new ClassAChild(1);
